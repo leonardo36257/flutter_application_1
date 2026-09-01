@@ -7,21 +7,32 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-   home:TelaInicial());
+    return const MaterialApp(home: TelaInicial());
   }
 }
 
-
 class TelaInicial extends StatelessWidget {
   const TelaInicial({super.key});
-
   @override
   Widget build(BuildContext context) {
-   
-  
+    return Scaffold(
+      body: Center(
+        child: Image.asset(
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-PbdTYfvWRRljeM_9gshBRhcxxN-kB63Hv5QbpyRKcQ&s=10',
+        ),
+        child: Column(
+          mainAxisAlignment: .center,
+          children: [
+            Text(
+              'Caverna do Dragão',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            ElevatedButton(onPressed: () {}, child: Text('entrar')),
+          ],
+        ),
+      ),
+    );
   }
 }
