@@ -29,7 +29,18 @@ class TelaInicial extends StatelessWidget {
               'Caverna do Dragão',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            ElevatedButton(onPressed: () {}, child: Text('entrar')),
+            ElevatedButton(
+              onPressed: ( ) {
+               Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context)=> const 
+                  TelaJogoHeroi()
+                )
+               )
+               }, child: Text(
+                'entrar')
+                ),
           ],
         ),
       ),
