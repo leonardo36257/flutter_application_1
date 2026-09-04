@@ -56,7 +56,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  assets:
+  - 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-PbdTYfvWRRljeM_9gshBRhcxxN-kB63Hv5QbpyRKcQ&s=10'
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+ import 'TelaJogoHeroi.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,12 +20,10 @@ class TelaInicial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset(
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-PbdTYfvWRRljeM_9gshBRhcxxN-kB63Hv5QbpyRKcQ&s=10',
-        ),
         child: Column(
           mainAxisAlignment: .center,
           children: [
+            Image.asset('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-PbdTYfvWRRljeM_9gshBRhcxxN-kB63Hv5QbpyRKcQ&s=10',),
             Text(
               'Caverna do Dragão',
               style: Theme.of(context).textTheme.headlineMedium,
@@ -37,7 +36,7 @@ class TelaInicial extends StatelessWidget {
                   builder: (context)=> const 
                   TelaJogoHeroi()
                 )
-               )
+               );
                }, child: Text(
                 'entrar')
                 ),
